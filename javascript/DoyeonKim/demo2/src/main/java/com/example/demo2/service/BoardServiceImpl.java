@@ -37,5 +37,10 @@ public class BoardServiceImpl implements BoardService{
     public void modify(Board board) throws Exception {
         repository.update(board);
     }
+
+
+    // 게시글 목록 + 페이징 + 검색
+
+
 }
 

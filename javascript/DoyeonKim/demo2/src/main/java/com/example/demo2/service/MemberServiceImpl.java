@@ -22,6 +22,7 @@ public class MemberServiceImpl implements MemberService {
     public void login(Member member) throws Exception {
         repository.login(member);
     }
+
     @Override
     public List<Member> list() throws Exception {
         return repository.list();

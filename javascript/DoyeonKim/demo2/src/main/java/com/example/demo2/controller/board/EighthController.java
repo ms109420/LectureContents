@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Slf4j
 @Controller
 public class EighthController {
+
     @Autowired
     private BoardService service;
 

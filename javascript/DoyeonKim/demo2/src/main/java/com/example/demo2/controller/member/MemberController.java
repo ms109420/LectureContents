@@ -1,7 +1,8 @@
 package com.example.demo2.controller.member;
 
-import com.example.demo2.entity.Board;
+
 import com.example.demo2.entity.Member;
+import com.example.demo2.entity.Board;
 import com.example.demo2.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

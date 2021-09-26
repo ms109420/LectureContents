@@ -17,5 +17,6 @@ public class Board {
     private String writer;
     private Date regDate;
 }
+
 // DIP(Dependency Inversion Principle)
 // 의존성 역전 원칙을 지키면 Entity의 오염을 방지할 수 있음

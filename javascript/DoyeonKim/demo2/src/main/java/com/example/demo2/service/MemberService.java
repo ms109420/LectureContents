@@ -1,5 +1,6 @@
 package com.example.demo2.service;
 
+import com.example.demo2.entity.Board;
 import com.example.demo2.entity.Member;
 
 import java.util.List;

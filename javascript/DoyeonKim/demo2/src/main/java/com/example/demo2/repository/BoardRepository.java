@@ -14,6 +14,7 @@ import java.util.List;
 
 @Repository
 public class BoardRepository {
+
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
@@ -102,4 +103,5 @@ public class BoardRepository {
 
         jdbcTemplate.update(query, board.getTitle(), board.getContent(), board.getBoardNo());
     }
+
 }

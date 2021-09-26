@@ -9,28 +9,28 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class EleventhJavaScriptTestController {
 
     @GetMapping("/localeStringTest")
-    public String getLocaleStringTest () {
+    public String getLocaleStringTest() {
         log.info("getLocaleStringTest()");
 
         return "/javascript/eleventh/localeStringTest";
     }
 
     @GetMapping("/customObjectTest")
-    public String getCustomObjectTest () {
+    public String getCustomObjectTest() {
         log.info("getCustomObjectTest()");
 
         return "/javascript/eleventh/customObjectTest";
     }
 
     @GetMapping("/destDayTest")
-    public String getDestDayTest () {
+    public String getDestDayTest() {
         log.info("getDestDayTest()");
 
         return "/javascript/eleventh/destDayTest";
     }
 
     @GetMapping("/bankTest")
-    public String getBankTest () {
+    public String getBankTest() {
         log.info("getBankTest()");
 
         return "/javascript/eleventh/bankTest";

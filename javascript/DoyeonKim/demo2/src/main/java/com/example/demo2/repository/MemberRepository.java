@@ -1,6 +1,5 @@
 package com.example.demo2.repository;
 
-import com.example.demo2.entity.Board;
 import com.example.demo2.entity.Member;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -56,14 +55,9 @@ public class MemberRepository {
     }
 
     public List<Member> list() throws Exception {
-        // RowMapper를 통해 얻은 행을 하나씩 List에 집어넣으니
-        // results엔 DB에서 얻어온 행 정보들이 들어있다.
         List<Member> results = jdbcTemplate.query(
                 "select member_no, id, pw, reg_date from member " +
                         "where member_no > 0 order by member_no desc",
-                // Row: 행
-                // 여러개의 Column(열)들이 행 1개에 포함되어 있음
-                // 여러 열들을 얻어와서 행으로 맵핑하는 작업을 수행함
                 new RowMapper<Member>() {
                     @SneakyThrows
                     @Override
